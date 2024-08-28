@@ -1,6 +1,6 @@
 /* Example of custom stylesheet */
 header {
-  --georchestra-header-primary: #000; 
+  --georchestra-header-primary: #000 !important; 
   --georchestra-header-secondary: #333;
   --georchestra-header-primary-light: #FFFFFF;
   --georchestra-header-secondary-light: #eee;

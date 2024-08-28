@@ -1,8 +1,8 @@
 /* Example of custom stylesheet */
 header {
-  --georchestra-header-primary: black; /* connection button and selected line bellow */
+  --georchestra-header-primary: #000; /* connection button and selected line bellow */
   --georchestra-header-secondary: #333;
-  --georchestra-header-primary-light: white;
+  --georchestra-header-primary-light: #FFFFFF;
   --georchestra-header-secondary-light: #eee;
 }
 .admin-dropdown > li.active {

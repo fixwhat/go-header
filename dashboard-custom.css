@@ -1,0 +1,95 @@
+/* Remove shadows from all counter widgets */
+.dashboard-container .widget-container,
+.dashboard-container .ms-widget,
+.dashboard-container .counter-widget {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+
+/* Individual counter background colors using nth-child selector */
+.dashboard-container .counter-widget:nth-child(1),
+.dashboard-container .ms-widget:nth-child(1) {
+    background-color: #e3f2fd !important; /* Light Blue */
+}
+
+.dashboard-container .counter-widget:nth-child(2),
+.dashboard-container .ms-widget:nth-child(2) {
+    background-color: #f3e5f5 !important; /* Light Purple */
+}
+
+.dashboard-container .counter-widget:nth-child(3),
+.dashboard-container .ms-widget:nth-child(3) {
+    background-color: #e8f5e8 !important; /* Light Green */
+}
+
+.dashboard-container .counter-widget:nth-child(4),
+.dashboard-container .ms-widget:nth-child(4) {
+    background-color: #fff3e0 !important; /* Light Orange */
+}
+
+.dashboard-container .counter-widget:nth-child(5),
+.dashboard-container .ms-widget:nth-child(5) {
+    background-color: #fce4ec !important; /* Light Pink */
+}
+
+.dashboard-container .counter-widget:nth-child(6),
+.dashboard-container .ms-widget:nth-child(6) {
+    background-color: #e0f2f1 !important; /* Light Teal */
+}
+
+.dashboard-container .counter-widget:nth-child(7),
+.dashboard-container .ms-widget:nth-child(7) {
+    background-color: #f9fbe7 !important; /* Light Lime */
+}
+
+.dashboard-container .counter-widget:nth-child(8),
+.dashboard-container .ms-widget:nth-child(8) {
+    background-color: #e8eaf6 !important; /* Light Indigo */
+}
+
+/* Alternative approach using specific widget IDs or classes */
+/* If your counters have specific IDs, use this pattern instead: */
+
+/*
+#counter-widget-1 {
+    background-color: #e3f2fd !important;
+    box-shadow: none !important;
+}
+
+#counter-widget-2 {
+    background-color: #f3e5f5 !important;
+    box-shadow: none !important;
+}
+*/
+
+/* Additional styling for counter content */
+.dashboard-container .counter-widget .counter-value,
+.dashboard-container .ms-widget .counter-value {
+    color: #333 !important; /* Ensure text is readable */
+    font-weight: bold;
+}
+
+.dashboard-container .counter-widget .counter-label,
+.dashboard-container .ms-widget .counter-label {
+    color: #666 !important; /* Slightly lighter for labels */
+}
+
+/* Remove any border radius if you want sharp corners */
+.dashboard-container .counter-widget,
+.dashboard-container .ms-widget {
+    border-radius: 0 !important;
+}
+
+/* Optional: Add subtle border instead of shadow */
+.dashboard-container .counter-widget,
+.dashboard-container .ms-widget {
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Hover effects (optional) */
+.dashboard-container .counter-widget:hover,
+.dashboard-container .ms-widget:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}

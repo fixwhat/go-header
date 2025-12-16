@@ -10,16 +10,3 @@ header {
   color: white;
 }
 
-img {
-max-width: 100%;
-  height: auto;
-  margin: 1.4em;
-}
-
-lg {
-background: black;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-}

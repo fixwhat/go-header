@@ -93,6 +93,7 @@
          "type":"dropdown",
          "label":"APIs (construção)",
          "i18n":"APIs",
+         "hasRole":"ROLE_SUPERUSER,ROLE_GN_EDITOR,ROLE_GN_ADMIN,ROLE_MAPSTORE_ADMIN",
          "items":[
             {
                "label":"OGC API Feature",

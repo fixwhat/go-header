@@ -46,7 +46,7 @@
          "hasRole":"ROLE_SUPERUSER,ROLE_GN_EDITOR,ROLE_GN_ADMIN,ROLE_MAPSTORE_ADMIN",
          "items":[
 	      {
-       		  "label":"Superset",
+       		  "label":"Superset (construção)",
       		   "i18n":"superset",
         	    "url":"/superset",
        		  "activeAppUrl":"/superset",
@@ -57,7 +57,7 @@
                "i18n":"meta-editor",
                "url":"/metadata-editor ",
                "activeAppUrl":"/metadata-editor",
-               "hasRole":"ROLE_SUPERUSER,ROLE_GN_REVIEWER,ROLE_GN_ADMIN,ROLE_GN_EDITOR"
+               "hasRole":"ROLE_SUPERUSER"
             },
             {
                "label":"Geonetwork",
@@ -98,12 +98,16 @@
             {
                "label":"OGC API Feature",
                "i18n":"OGC API Features",
-               "url":"/geoserver/ogc/features/v1 "
+               "url":"/geoserver/ogc/features/v1",
+               "hasRole":"ROLE_SUPERUSER"
+
             },
             {
                "label":"OGC API Records",
                "i18n":"OGC API Records",
-               "url":"/ogc-api-records/"
+               "url":"/ogc-api-records/",
+               "hasRole":"ROLE_SUPERUSER"
+
             },
             {
                "label":"Swagger Geonetwork",
@@ -112,7 +116,8 @@
             {
                "label":"Swagger Superse",
                "i18n":"Superset",
-               "url":"/superset/swagger/v1"
+               "url":"/superset/swagger/v1",
+               "hasRole":"ROLE_SUPERUSER"
             }
          ]
       }

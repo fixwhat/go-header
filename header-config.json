@@ -79,13 +79,6 @@
                "url":"/console/manager/home",
                "activeAppUrl":"/console/manager",
                "hasRole":"ROLE_SUPERUSER"
-            },
-            {
-               "label":"Datafeeder (construção)",
-               "i18n":"datafeeder",
-               "url":"/import",
-               "activeAppUrl":"/import",
-               "hasRole":"ROLE_SUPERUSER,ROLE_IMPORT"
             }
          ]
       },
@@ -105,16 +98,14 @@
             {
                "label":"OGC API Records",
                "i18n":"OGC API Records",
-               "url":"/ogc-api-records/",
-               "hasRole":"ROLE_SUPERUSER"
-
+               "url":"/ogc-api-records/"
             },
             {
                "label":"Swagger Geonetwork",
                "url":"/geonetwork/doc/api/index.html"
             },
             {
-               "label":"Swagger Superse",
+               "label":"Swagger Superset",
                "i18n":"Superset",
                "url":"/superset/swagger/v1",
                "hasRole":"ROLE_SUPERUSER"

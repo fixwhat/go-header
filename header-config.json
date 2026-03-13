@@ -1,5 +1,7 @@
 {
    "config":{
+      "logoUrl":"/cdhu-logo-white.svg",
+      "stylesheet":"/georchestra.css",
       "hideLogin":false,
       "adminRoles":[
          "ROLE_SUPERUSER",
@@ -30,6 +32,54 @@
          "activeAppUrl":"/mapstore/#/home"
       },
       {
+         "type":"dropdown",
+         "label":"Painéis",
+         "activeAppUrl":"/paineis",
+         "items":[
+            {
+               "label":"Todos",
+               "url":"/paineis/superset/welcome/",
+               "activeAppUrl":"/paineis/superset/welcome"
+            },
+            {
+               "type":"separator"
+            },
+            {
+               "label":"Painéis",
+               "url":"/paineis/dashboard/list/",
+               "activeAppUrl":"/paineis/dashboard/list"
+            },
+            {
+               "label":"Gráficos",
+               "url":"/paineis/chart/list/",
+               "activeAppUrl":"/paineis/chart/list"
+            },
+            {
+               "label":"Conjuntos de dados",
+               "url":"/paineis/tablemodelview/list/",
+               "activeAppUrl":"/paineis/tablemodelview/list"
+            },
+            {
+               "type":"separator"
+            },
+            {
+               "label":"SQL Lab",
+               "url":"/paineis/sqllab/",
+               "activeAppUrl":"/paineis/sqllab"
+            },
+            {
+               "label":"Consultas salvas",
+               "url":"/paineis/savedqueryview/list/",
+               "activeAppUrl":"/paineis/savedqueryview/list"
+            },
+            {
+               "label":"Histórico de consultas",
+               "url":"/paineis/sqllab/history/",
+               "activeAppUrl":"/paineis/sqllab/history"
+            }
+         ]
+      },
+      {
          "label":"Services",
          "i18n":"services",
          "url":"/geoserver/web",
@@ -46,10 +96,10 @@
          "hasRole":"ROLE_SUPERUSER,ROLE_GN_EDITOR,ROLE_GN_ADMIN,ROLE_MAPSTORE_ADMIN",
          "items":[
 	      {
-       		  "label":"Superset (construção)",
+       		  "label":"Superset",
       		   "i18n":"superset",
-        	    "url":"/superset",
-       		  "activeAppUrl":"/superset",
+        	    "url":"/paineis",
+       		  "activeAppUrl":"/paineis",
       		   "hasRole":"ROLE_SUPERUSER"
       		},
             {
@@ -79,13 +129,73 @@
                "url":"/console/manager/home",
                "activeAppUrl":"/console/manager",
                "hasRole":"ROLE_SUPERUSER"
+            }
+         ]
+      },
+      {
+         "type":"dropdown",
+         "label":"Superset ADM",
+         "hasRole":"ROLE_SUPERUSER",
+         "items":[
+            {
+               "label":"Usuários",
+               "url":"/paineis/users/list/",
+               "activeAppUrl":"/paineis/users/list",
+               "hasRole":"ROLE_SUPERUSER"
             },
             {
-               "label":"Datafeeder (construção)",
-               "i18n":"datafeeder",
-               "url":"/import",
-               "activeAppUrl":"/import",
-               "hasRole":"ROLE_SUPERUSER,ROLE_IMPORT"
+               "label":"Grupos",
+               "url":"/paineis/groups/list/",
+               "activeAppUrl":"/paineis/groups/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "label":"Papéis",
+               "url":"/paineis/roles/",
+               "activeAppUrl":"/paineis/roles",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "type":"separator"
+            },
+            {
+               "label":"Logs",
+               "url":"/paineis/logmodelview/list/",
+               "activeAppUrl":"/paineis/logmodelview/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "type":"separator"
+            },
+            {
+               "label":"Seg. em nível linha",
+               "url":"/paineis/rowlevelsecurity/list/",
+               "activeAppUrl":"/paineis/rowlevelsecurity/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "label":"Conexões Base Dados",
+               "url":"/paineis/databaseview/list/",
+               "activeAppUrl":"/paineis/databaseview/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "label":"Modelos CSS",
+               "url":"/paineis/csstemplatemodelview/list/",
+               "activeAppUrl":"/paineis/csstemplatemodelview/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "label":"Camadas de Anotação",
+               "url":"/paineis/annotationlayer/list/",
+               "activeAppUrl":"/paineis/annotationlayer/list",
+               "hasRole":"ROLE_SUPERUSER"
+            },
+            {
+               "label":"Info de utilizador",
+               "url":"/paineis/users/userinfo/",
+               "activeAppUrl":"/paineis/users/userinfo",
+               "hasRole":"ROLE_SUPERUSER"
             }
          ]
       },
@@ -96,30 +206,29 @@
          "hasRole":"ROLE_SUPERUSER,ROLE_GN_EDITOR,ROLE_GN_ADMIN,ROLE_MAPSTORE_ADMIN",
          "items":[
             {
-               "label":"OGC API Feature",
+               "label":"OGC API Feature (X)",
                "i18n":"OGC API Features",
                "url":"/geoserver/ogc/features/v1",
                "hasRole":"ROLE_SUPERUSER"
-
             },
             {
                "label":"OGC API Records",
                "i18n":"OGC API Records",
-               "url":"/ogc-api-records/",
-               "hasRole":"ROLE_SUPERUSER"
-
+               "url":"/ogc-api-records/"
             },
             {
                "label":"Swagger Geonetwork",
                "url":"/geonetwork/doc/api/index.html"
             },
             {
-               "label":"Swagger Superse",
+               "label":"Swagger Superset (X)",
                "i18n":"Superset",
                "url":"/superset/swagger/v1",
                "hasRole":"ROLE_SUPERUSER"
+
             }
          ]
       }
    ]
 }
+
